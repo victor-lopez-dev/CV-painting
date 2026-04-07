@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Colors */
+  --main-blue: #2B4E75;
+  --light-blue: #3C91E1;
+  --light-blue-opac: rgba(60, 145, 225, 0.8);
+  
+  /* general */
+  --radius: 4px;
+  --dark-opacity: rgba(0, 0, 0, 0.5);
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p, a, li, span {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.text-light-blue {
+  color: var(--light-blue);
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-italic {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.container {
+  padding: 8rem 0;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  padding: 0 24px;
+  margin:  0 auto;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.blue-overlay {
+  background-color: var(--light-blue-opac);
+}
+
+.dark-overlay {
+  background-color: var(--dark-opacity);
+}
+
+/* Buttons */
+.CTA-buttons {
+  display: inline-block;
+  padding: 12px 24px;
+  font-weight: 300;
+  transition: background-color 0.3s ease;
+  
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-button {
+  color: white;
+  background-color: var(--light-blue);
+  border: 1px solid var(--light-blue);
+}
+
+.gallery-button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.button-arrow {
+  display: inline-block;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+a:hover .button-arrow {
+  transform: rotate(90deg) scale(1.05);
+}
+
+/* nav */
+nav {
+  position: fixed;
+  top: 48px;
+  left: 48px;
+  right: 48px;
+  z-index: 1000;
+  background-color: #fff;
+  padding: 8px 24px;
+  border-radius: var(--radius);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: top 500ms ease;
+}
+
+nav.scrolled {
+  top: 8px;
+}
+
+.company-logo {
+  width: 80px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-link {
+  color: #000;
+  transition: color 300ms ease;
+}
+
+.nav-link:hover {
+  color: var(--light-blue);
+}
+
+.service-dropdown-parent {
+  position: relative;
+}
+
+.service-dropdown-parent::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 20px;
+}
+
+.service-dropdown {
+  position: absolute;
+  top: calc(100% + 20px);
+  left: -16px;
+  width: 200px;
+  padding: 16px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-10px);
+  gap: 8px;
+  opacity: 0;
+  visibility: hidden;
+
+  transition: opacity 300ms ease, transform 300ms ease, visibility 300ms ease;
+}
+
+.service-link > a {
+  color: var(--light-blue);
+}
+
+.service-dropdown-parent:hover .parent-link {
+  color: var(--light-blue);
+}
+
+.service-dropdown-parent:hover .service-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  color: var(--light-blue);
+}
+
+
+#hero {
+  width: 100%;
+  height: 100dvh;
+  padding: 24px;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text-container {
+  position: absolute;
+  top: 50%;
+  left: 48px;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.hero-title {
+  font-size: 48px;
+  margin-bottom: 16px;
+  width: 1000px;
+}
+
+.hero-subtitle {
+  margin-bottom: 24px;
+}
+
+.hero-button-container {
+  display: inline-flex;
+  gap: 24px;
+}
+
+
+/* Credentials */
+.credential-container {
+  padding-top: 0px;
+  padding-bottom: 8rem;
+}
+
+.credentials-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  gap: 24px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.credential-box {
+  position: relative;
+  background-color: var(--main-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  overflow: hidden;
+  gap: 4px;
+}
+
+.credential-title {
+  font-size: 80px;
+}
+
+.credential-sub-text {
+  color: #fff;
+}
+
+.review-img {
+  width: 100%;
+}
+
+.review-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.small-text {
+  font-size: 12px;
+  color: #cfcfcf;
+}
+
+.pca-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+/* TEAM */
+#team {
+  background-color: var(--main-blue);
+}
+
+.team-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+
+.team-container {
+  color: #fff;
+  width: 40%;
+}
+
+.team-img-container {
+  width: 600px;
+  background-color: #fff;
+  height: 400px;
+}
+
+/* services */
+.heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services-heading {
+  width: 500px;
+}
+
+.sub-heading {
+  width: 400px;
+}
+
+.service-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+}
+
+.service-box {
+  position: relative;
+}
+
+.service-img {
+  width: 100%;
+  display: block;
+}
+
+.service-info-container {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 2;
+  color: #fff;
+}
+
+.service-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+}
+
+.service-name {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.service-icon {
+  width: 40px;
+}
+
+.service-text {
+  width: 440px;
+  margin-top: 32px;
+  margin-bottom: 80px;
+}
+
+.service-overlay {
+  background-color: var(--dark-opacity);
+  opacity: 1;
+  transition: opacity 300ms ease, background-color 300ms ease;
+}
+
+.service-box:hover .service-overlay {
+  background-color: var(--light-blue-opac);
+  opacity: 1;
+}
+
+.service-btn {
+  background-color: var(--light-blue);
+  transition: background-color 300ms ease;
+}
+
+.service-box:hover .service-btn {
+  background-color: transparent;
+}
