@@ -21,11 +21,23 @@ h1, h2, h3, h4 {
   font-family: 'Montserrat', sans-serif;
 }
 
+h2, h3, h4 {
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 32px;
+}
+
 p, a, li, span {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   text-decoration: none;
   list-style-type: none;
+}
+
+img {
+  display: block;
 }
 
 .text-light-blue {
@@ -206,6 +218,7 @@ nav.scrolled {
   height: 100%;
   object-fit: cover;
   display: block;
+  filter: brightness(0.5);
 }
 
 .hero-text-container {
@@ -309,8 +322,6 @@ nav.scrolled {
 }
 
 .heading {
-  font-size: 32px;
-  font-weight: 300;
   margin-bottom: 32px;
 }
 
@@ -353,7 +364,6 @@ nav.scrolled {
 
 .service-img {
   width: 100%;
-  display: block;
 }
 
 .service-info-container {
@@ -404,4 +414,46 @@ nav.scrolled {
 
 .service-box:hover .service-btn {
   background-color: transparent;
+}
+
+.specialization {
+  margin-top: 32px;
+  width: 400px;
+  font-size: 14px;
+}
+
+/* Owner */
+.owner-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.owner-img-wrapper {
+  width: 600px;
+  height: 400px;
+}
+
+.owner-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 45%;
+}
+
+.owner-img {
+  width: 100%;
+}
+
+.sub-heading-gallery {
+  margin-top: 8px;
+  width: 500px;
+  color: #5a5a5a;
+}
+
+.gallery-text {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  width: 1200px;
 }
