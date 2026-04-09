@@ -53,6 +53,10 @@ img {
   text-decoration: underline;
 }
 
+.heading {
+  margin-bottom: 32px;
+}
+
 .container {
   padding: 8rem 0;
 }
@@ -251,14 +255,18 @@ nav.scrolled {
   padding-bottom: 8rem;
 }
 
-.credentials-container {
+.credentials-container,
+.testimonials-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr;
   justify-content: center;
   gap: 24px;
-  width: 1000px;
   margin: 0 auto;
+}
+
+.credentials-container {
+  width: 1000px;
 }
 
 .credential-box {
@@ -281,8 +289,10 @@ nav.scrolled {
   color: #fff;
 }
 
-.review-img {
-  width: 100%;
+.review-box-img {
+  background-image: url('assets/bathroom-paint-img.webp');
+  background-position: center;
+  background-size: cover;
 }
 
 .review-text {
@@ -308,32 +318,6 @@ nav.scrolled {
   flex-direction: column;
   align-items: center;
   gap: 8px;
-}
-
-/* TEAM */
-#team {
-  background-color: var(--main-blue);
-}
-
-.team-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
-}
-
-.heading {
-  margin-bottom: 32px;
-}
-
-.team-container {
-  color: #fff;
-  width: 40%;
-}
-
-.team-img-container {
-  width: 600px;
-  background-color: #fff;
-  height: 400px;
 }
 
 /* services */
@@ -533,17 +517,23 @@ nav.scrolled {
 
 .testimonials-wrapper {
   margin-top: 80px;
-  border: 1px solid red;
   width: 100%;
-
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   gap: 8px;
-
 }
 
-.client-review-video {
-  grid-row: span 2 / span 2;
-  background-color: blue;
+.review-box {
+  position: relative;
+  background-color: var(--light-blue);
+  color: #fff;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  gap: 80px;
+}
+
+.review-link-box {
+  padding: 0;
 }
