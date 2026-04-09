@@ -522,3 +522,28 @@ nav.scrolled {
   object-fit: cover;
   transition: transform 300ms ease;
 }
+
+
+/* testimonials */
+.testimonials-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials-wrapper {
+  margin-top: 80px;
+  border: 1px solid red;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 8px;
+
+}
+
+.client-review-video {
+  grid-row: span 2 / span 2;
+  background-color: blue;
+}
