@@ -252,13 +252,24 @@ nav.scrolled {
 }
 
 .credentials-container,
-.testimonials-wrapper {
+.testimonials-wrapper,
+.credentials-container-services {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr;
   justify-content: center;
   gap: 24px;
   margin: 0 auto;
+}
+
+.credentials-container,
+.testimonials-wrapper {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  
+}
+
+.credentials-container-services {
+  grid-template-columns: repeat(4, 1fr);
+
 }
 
 .credentials-container {
@@ -654,4 +665,72 @@ footer {
   100% {
     transform: translateY(0px);
   }
+}
+
+
+
+
+/* Service page */
+.service-hero-img-wrapper {
+  background-image: url('assets/residential-service-img.webp');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+.service-credential-container {
+  margin-top: 80px;
+}
+
+.service-hero-title {
+  font-weight: 300;
+}
+
+.interior-paint-img,
+.exterior-paint-img {
+  width: 100%;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+}
+
+.interior-paint-img {
+  background-image: url('assets/residential-img.webp');
+}
+
+.exterior-paint-img {
+  background-image: url('assets/exterior-residential-img.webp');
+}
+
+.service-page-container {
+  margin-top: 32px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.service-info {
+  width: 450px;
+  margin: 16px 0 32px 0;
+}
+
+.special-service-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 16px;
+  width: 600px;
+}
+
+.special-heading {
+  width: 400px;
+  margin-bottom: 24px;
+}
+
+.special-text {
+  margin-top: 8px;
+  color: #555555;
 }
