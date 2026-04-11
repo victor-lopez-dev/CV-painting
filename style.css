@@ -54,7 +54,7 @@ img {
 }
 
 .container {
-  padding: 8rem 0;
+  padding: 6rem 0;
 }
 
 .row {
@@ -733,4 +733,26 @@ footer {
 .special-text {
   margin-top: 8px;
   color: #555555;
+}
+
+
+/* drywall prep */
+.drywall-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.drywall-sub-heading {
+  margin: 8px 0 24px 0;
+}
+
+.drywall-prep-wrapper {
+  width: 45%;
+}
+
+.drywall-img {
+  width: 45%;
+  height: 400px;
+  background-color: #555555;
 }
