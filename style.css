@@ -406,8 +406,20 @@ nav.scrolled {
   position: relative;
 }
 
-.service-img {
+.residential-img {
+  background-image: url('assets/residential-img.webp');
+  background-position: center;
+  background-size: cover;
   width: 100%;
+  height: 300px;
+}
+
+.commercial-img {
+  background-image: url('assets/office-img.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
 }
 
 .service-info-container {
@@ -437,7 +449,6 @@ nav.scrolled {
 .service-text {
   width: 440px;
   margin-top: 32px;
-  margin-bottom: 80px;
 }
 
 .service-overlay {
@@ -1105,7 +1116,7 @@ footer {
   }
 
   .footer-sub-text {
-    width: 350px;
+    width: 300px;
   }
 
   .social-media-text {
@@ -1113,7 +1124,7 @@ footer {
   }
 
   .sub-heading-gallery {
-    width: 350px;
+    width: 300px;
   }
 
   .heading-container {
@@ -1127,7 +1138,7 @@ footer {
   }
 
   .review-box {
-    height: 400px;
+    height: 350px;
     justify-content: space-evenly;
   }
 
@@ -1194,4 +1205,40 @@ footer {
   .sub-heading {
     width: 350px;
   }
+
+  .specialization {
+    width: 100%;
+  }
+
+  .footer-heading {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .service-text {
+    width: 300px;
+    margin-top: 16px;
+  }
+
+  .copyright,
+  .terms,
+  .privacy {
+    font-size: 10px;
+    width: 100%;
+  }
+
+  .terms-container {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .service-info-container,
+  .service-btn {
+    left: 12px;
+  }
+
+  .service-icon {
+    width: 32px;
+  }
+
 }
