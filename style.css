@@ -680,6 +680,7 @@ footer {
 .social-links {
   display: flex;
   gap: 16px;
+  justify-content: space-between;
 }
 
 .line {
@@ -754,6 +755,10 @@ footer {
   font-weight: 300;
 }
 
+.service-heading {
+  margin: 16px 0;
+}
+
 .interior-paint-img,
 .exterior-paint-img {
   width: 100%;
@@ -771,7 +776,7 @@ footer {
 }
 
 .service-page-container {
-  margin-top: 32px;
+  margin-top: 8px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -788,11 +793,6 @@ footer {
   grid-template-rows: repeat(3, 1fr);
   gap: 16px;
   width: 600px;
-}
-
-.special-heading {
-  width: 400px;
-  margin-bottom: 24px;
 }
 
 .special-text {
@@ -818,7 +818,7 @@ footer {
 }
 
 .drywall-img {
-  background-image: url('assets/drywall-prep-img.webp');
+  background-image: url('assets/drywall-repair-img.webp');
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -846,7 +846,8 @@ footer {
 
 .color-consulting-wrapper {
   position: absolute;
-  left: 30%;
+  left: 32px;
+  top: 40px;
 }
 
 .color-text {
@@ -938,7 +939,7 @@ footer {
 }
 
 .process-container {
-  padding-bottom: 8rem;
+  padding-bottom: 12rem;
 }
 
 .careers-text {
@@ -947,11 +948,6 @@ footer {
 
 .careers-btn {
   margin-top: 8px;
-}
-
-.social-links {
-  display: flex;
-  justify-content: space-between;
 }
 
 .socials {
@@ -1016,6 +1012,11 @@ footer {
     left: 24px;
     right: 24px;
   }
+
+  .special-service-container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 400px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -1076,9 +1077,25 @@ footer {
   .testimonial-sub-text {
     text-align: center;
   }
+
+  .service-info {
+    width: 320px;
+  }
+
+  .drywall-img {
+    height: 420px;
+  }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
+  .process-row {
+  padding-bottom: 8rem;
+}
+
+  .gallery-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .hero-text-container {
     display: flex;
     flex-direction: column;
@@ -1157,6 +1174,42 @@ footer {
 
   .copyright {
     width: 150px;
+  }
+
+  .service-page-container {
+    flex-direction: column-reverse;
+  }
+
+  .special-service-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+  .service-info {
+    width: 100%;
+    margin: 32px 0;
+  }
+
+  .process-line {
+    left: 32px;
+  }
+
+  .circle1,
+  .circle2,
+  .circle3,
+  .circle4 {
+    left: 32px;
+  }
+
+  .process-1,
+  .process-2,
+  .process-3,
+  .process-4 {
+    left: 60px;
+  }
+
+  .process-diagram {
+    width: 100%;
   }
 }
 
