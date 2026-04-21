@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -203,6 +204,10 @@ nav.scrolled {
   visibility: visible;
   transform: translateY(0);
   color: var(--light-blue);
+}
+
+.parent-link:hover {
+  cursor: pointer;
 }
 
 /* hamburger menu */
@@ -1429,6 +1434,34 @@ footer {
 
 .modal-contact {
   position: absolute;
-  bottom: 8px;
+  bottom: 24px;
   left: 8px;
+}
+
+.nj-stories {
+  margin-top: 10rem;
+}
+
+.write-review {
+  width: 100%;
+  text-align: center;
+}
+
+
+/* policy page / service page */
+
+#policy-privacy,
+#terms-service {
+  margin-top: 8rem;
+}
+
+#policy-privacy h3,
+#terms-service h3 { 
+  margin-bottom: 16px;
+  color: var(--light-blue);
+}
+
+#policy-privacy p,
+#terms-service {
+  margin-bottom: 8px;
 }
