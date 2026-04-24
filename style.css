@@ -771,6 +771,10 @@ footer {
   background-image: url('assets/silver-spring.webp');
 }
 
+.bethesda-hero-img {
+  background-image: url('assets/bethesda-row.webp');
+}
+
 .service-credential-container {
   margin-top: 80px;
 }
