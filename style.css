@@ -767,6 +767,10 @@ footer {
   background-image: url('assets/rockville-square.webp');
 }
 
+.silver-spring-hero-img {
+  background-image: url('assets/silver-spring.webp');
+}
+
 .service-credential-container {
   margin-top: 80px;
 }
