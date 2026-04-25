@@ -791,6 +791,14 @@ footer {
   background-image: url('assets/germantown.webp');
 }
 
+.north-potomac-hero-img {
+  background-image: url('assets/north-potomac.webp');
+}
+
+.clarksburg-hero-img {
+  background-image: url('assets/clarksburg.webp');
+}
+
 .service-credential-container {
   margin-top: 80px;
 }
