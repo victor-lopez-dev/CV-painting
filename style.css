@@ -775,6 +775,22 @@ footer {
   background-image: url('assets/bethesda-row.webp');
 }
 
+.kensington-hero-img {
+  background-image: url('assets/kensington.webp');
+}
+
+.chevy-chase-hero-img {
+  background-image:  url('assets/chevy-chase.webp');
+}
+
+.gaithersburg-hero-img {
+  background-image: url('assets/rio.webp');
+}
+
+.germantown-hero-img {
+  background-image: url('assets/germantown.webp');
+}
+
 .service-credential-container {
   margin-top: 80px;
 }
